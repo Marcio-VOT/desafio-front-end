@@ -6,12 +6,14 @@ import {
   EmployeeListState,
 } from "../../utils/protocols";
 import { EmployeeData } from "./EmployeeData/EmployeeData";
+import { useSearchParams } from "react-router-dom";
 
 export default function EmployeeTable() {
   const [employees, setEmployees] = useState<EmployeeList>([]);
   const [employeeListState, setEmployeeListState] = useState<EmployeeListState>(
     `LOADING`
   );
+  const [searchParams] = useSearchParams();
   const [reload, setReload] = useState<boolean>(false);
   useEffect(() => {
     setEmployeeListState(`LOADING`);
@@ -54,7 +56,12 @@ export default function EmployeeTable() {
           </th>
         </tr>
       </EmployeeTableHeader>
-      {EmployeeData[employeeListState]({ employees, reload, setReload })}
+      {EmployeeData[employeeListState]({
+        employees,
+        reload,
+        setReload,
+        search: searchParams.get("search") || "",
+      })}
     </EmployeeTableStyle>
   );
 }
