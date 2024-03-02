@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { EmployeeInfoProps } from "../../../../utils/protocols";
+import { EmployeeInfoProps } from "../../../utils/protocols";
 
 export const EmployeeCardContainer = styled.tbody`
   text-align: center;

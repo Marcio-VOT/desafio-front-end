@@ -1,6 +1,6 @@
-import { formatPhoneNumber } from "../../../../utils/formatPhoneNumber";
-import vector from "../../../../assets/vector.png";
-import { Employee } from "../../../../utils/protocols";
+import { formatPhoneNumber } from "../../../utils/formatPhoneNumber";
+import vector from "../../../assets/vector.png";
+import { Employee } from "../../../utils/protocols";
 import { useState } from "react";
 import {
   EmployeeCardContainer,

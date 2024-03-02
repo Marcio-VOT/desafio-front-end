@@ -1,7 +1,7 @@
-import { Employee } from "../../../../utils/protocols";
-import EmployeeCard from "../EmployeeCard/EmployeeCard";
+import { EmployDataObjectProps } from "../../../../utils/protocols";
+import EmployeeCard from "../../EmployeeCard/EmployeeCard";
 
-export default function SuccessBody({ employees }: { employees?: Employee[] }) {
+export default function SuccessBody({ employees }: EmployDataObjectProps) {
   return (
     <>
       {employees &&

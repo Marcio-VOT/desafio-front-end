@@ -13,7 +13,6 @@ export default function EmployeeTable() {
     `LOADING`
   );
   const [reload, setReload] = useState<boolean>(false);
-  console.log(setReload);
   useEffect(() => {
     setEmployeeListState(`LOADING`);
     fetch("http://localhost:3000/employees")
@@ -21,6 +20,7 @@ export default function EmployeeTable() {
       .then(data => {
         setTimeout(() => {
           setEmployees(data as Employee[]);
+
           if (data.length > 0) setEmployeeListState(`SUCCESS`);
           else setEmployeeListState(`EMPTY`);
         }, 1500);
@@ -53,7 +53,7 @@ export default function EmployeeTable() {
           </th>
         </tr>
       </EmployeeTableHeader>
-      {EmployeeData[employeeListState]({ employees })}
+      {EmployeeData[employeeListState]({ employees, reload, setReload })}
     </EmployeeTableStyle>
   );
 }
