@@ -45,5 +45,7 @@ export const TitleSearchStyle = styled.div`
     letter-spacing: 0px;
     text-align: left;
     font-family: Roboto, sans-serif;
+    color: #1C1C1C;
+
   }
 `;
