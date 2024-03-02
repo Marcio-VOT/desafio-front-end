@@ -92,14 +92,18 @@ const EmployeeTableStyle = styled.table`
   font-weight: 500;
   line-height: 19px;
   letter-spacing: 0em;
-  text-align: center;
   border-collapse: separate; 
-  border-spacing: 0 2px;
+  background-color: transparent;
+  border-color : transparent;
+  border-spacing: 0 1px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 
 
   thead{
     height: 50px;
     background-color: #fff;
+    box-shadow: 0px 1px 2px 0px #00000033;
     .end{
       display: none;
       @media (max-width: 768px){
@@ -125,9 +129,11 @@ const EmployeeTableStyle = styled.table`
   }
 
   thead:first-child {
-    background: linear-gradient(180deg, #5A84C0 0%, #594ED2 100%);
+    box-shadow: 0px 1px 2px 0px #00000033;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
+
+    background: linear-gradient(180deg, #5A84C0 0%, #594ED2 100%);
     th{
       font-family: Roboto, sans-serif;
       font-size: 16px;
@@ -135,6 +141,15 @@ const EmployeeTableStyle = styled.table`
       line-height: 19px;
       letter-spacing: 0em;
       color: #fff;
+    }
+    th:first-child{
+      border-top-left-radius: 8px;
+    }
+    th:last-child{
+      border-top-right-radius: 8px;
+    }
+    .phone{
+      border-top-right-radius: 8px;
     }
   }
 
