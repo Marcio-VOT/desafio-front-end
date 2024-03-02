@@ -5,9 +5,11 @@ export default function SuccessBody({ employees }: EmployDataObjectProps) {
   return (
     <>
       {employees &&
-        employees.map((employee, index) => (
-          <EmployeeCard key={index + employee.name} employee={employee} />
-        ))}
+        employees.map((employee, index) => {
+          return (
+            <EmployeeCard key={index + employee.name} employee={employee} />
+          );
+        })}
     </>
   );
 }

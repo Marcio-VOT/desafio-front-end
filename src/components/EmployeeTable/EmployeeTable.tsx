@@ -18,16 +18,17 @@ export default function EmployeeTable() {
     fetch("http://localhost:3000/employees")
       .then(response => response.json())
       .then(data => {
-        setTimeout(() => {
-          setEmployees(data as Employee[]);
-
-          if (data.length > 0) setEmployeeListState(`SUCCESS`);
-          else setEmployeeListState(`EMPTY`);
-        }, 1500);
+        // setTimeout(() => {
+        setEmployees(data as Employee[]);
+        if (data.length > 0) setEmployeeListState(`SUCCESS`);
+        else setEmployeeListState(`EMPTY`);
+        // }, 1500);
       })
       .catch(() => {
+        // setTimeout(() => {
         setEmployeeListState(`ERROR`);
         setEmployees([]);
+        // }, 1500);
       });
   }, [reload]);
 
