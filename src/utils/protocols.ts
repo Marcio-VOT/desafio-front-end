@@ -10,3 +10,11 @@ export type Employee = {
 export type EmployeeInfoProps = {
   open?: boolean | undefined;
 };
+
+export type EmployeeListState = 'LOADING' | 'ERROR' | 'EMPTY' | 'SUCCESS';
+
+export type EmployeeList = Employee[];
+
+export type EmployDataObject = {
+  [K in EmployeeListState]: ({ employees }: { employees?: Employee[] }) => JSX.Element;
+};
