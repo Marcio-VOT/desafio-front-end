@@ -92,7 +92,7 @@ Para testar o carregamento é necessário executar um dos bancos abaixo, error o
 npm run db:error || npm run db:empty
 ```
 
-Além de descomentar parte do código do componente 'EmployeeTable.tsx': linhas [23, 27, 30, 33], que contem a implementação de um interval entre o sucesso e falha da requisição para a API.
+Além de descomentar parte do código do componente 'EmployeeTable.tsx': linhas [23, 27, 30, 33], que contem a implementação de um `setTimeout` entre o sucesso e falha da requisição para a API.
 
 ```tsx
       .then(data => {
