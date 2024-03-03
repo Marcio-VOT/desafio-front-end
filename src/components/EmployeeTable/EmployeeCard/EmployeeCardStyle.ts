@@ -4,7 +4,6 @@ import { EmployeeInfoProps } from "../../../utils/protocols";
 export const EmployeeCardContainer = styled.tbody`
   text-align: center;
   box-shadow: 0px 1px 2px 0px #00000033;
-  background-color: #fff;
   tr {
     td {
       vertical-align: middle;

@@ -40,6 +40,7 @@ export const EmployeeTableStyle = styled.table`
   letter-spacing: 0em;
   border-collapse: separate;
   border-spacing: 0 1px;
+  background-color: white;
   .end {
     display: none;
     @media (max-width: 768px) {
