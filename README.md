@@ -4,8 +4,6 @@ Este projeto, intitulado "desafio-front-end", é uma implementação do desafio 
 
 O desafio é desenvolver uma aplicação que exibe uma tabela de dados, fornecidos por uma API simulada com json-server. A aplicação deve ser responsiva e permitir a pesquisa na tabela através de um input.
 
-- Deploy [https://desafio-front-end-lemon.vercel.app/](https://desafio-front-end-lemon.vercel.app/) (precisa estar rodando o json-server localmente)
-
 ### A tabela deve exibir:
 
 - Imagem (thumbnail do usuário)
@@ -14,6 +12,8 @@ O desafio é desenvolver uma aplicação que exibe uma tabela de dados, fornecid
 - Data de admissão
 - Telefone
 - O input de pesquisa deve permitir filtrar dados por cargo, nome e telefone. As datas e telefones devem ser formatados no front-end, não na API.
+
+#### Deploy [https://desafio-front-end-lemon.vercel.app/](https://desafio-front-end-lemon.vercel.app/) (precisa estar rodando o json-server localmente)
 
 ## Pré-requisitos
 
