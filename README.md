@@ -1,30 +1,73 @@
-# React + TypeScript + Vite
+# Desafio Front-End
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto, intitulado "desafio-front-end", é uma implementação do desafio proposto utilizando React com TypeScript.
 
-Currently, two official plugins are available:
+O desafio é desenvolver uma aplicação que exibe uma tabela de dados, fornecidos por uma API simulada com json-server. A aplicação deve ser responsiva e permitir a pesquisa na tabela através de um input.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# A tabela deve exibir:
 
-## Expanding the ESLint configuration
+Imagem (thumbnail do usuário)
+Nome
+Cargo
+Data de admissão
+Telefone
+O input de pesquisa deve permitir filtrar dados por cargo, nome e telefone. As datas e telefones devem ser formatados no front-end, não na API.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Pré-requisitos
 
-- Configure the top-level `parserOptions` property like this:
+Antes de começar, certifique-se de ter Node.js e npm instalados em sua máquina.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: "latest",
-    sourceType: "module",
-    project: ["./tsconfig.json", "./tsconfig.node.json"],
-    tsconfigRootDir: __dirname,
-  },
-};
+Para acessar os dados da API simulada, siga as instruções fornecidas neste README. É importante manter o json-server rodando no terminal para visualizar os dados no projeto.
+
+## Instalação
+
+Para instalar as dependências do projeto, execute o seguinte comando no terminal:
+
+```bash
+npm install
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Acesso aos dados da API simulada
+
+Para ter acesso aos dados que alimentarão o projeto, faça o seguinte:
+
+Entre na pasta do projeto, em sua máquina, e, por meio da linha de comando, execute o comando `json-server --watch db.json`, para consumir a API simulada;
+
+```bash
+json-server --watch db.json || npx json-server db.json
+```
+
+É necessário deixar o json-server rodando no terminal para que os dados sejam visualizados no projeto.
+
+Caso você tenha problemas com o json-server, tente rodá-lo com `npx json-server db.json` ou
+com `yarn json-server <path>/db.json`, em que `<path>` é o caminho completo até o diretório em que o arquivo db.json está localizado. Se mesmo assim não funcionar, busque ajuda na web.
+
+## Scripts Disponíveis
+
+No diretório do projeto, você pode executar:
+
+### `npm run dev`
+
+Executa o aplicativo em modo de desenvolvimento. Abra [http://localhost:5173](http://localhost:5173) para visualizá-lo no navegador.
+
+### `npm run build`
+
+Compila o aplicativo para produção na pasta `dist`.
+
+## Dependências
+
+Este projeto usa várias dependências, incluindo:
+
+- `react` e `react-dom`
+- `react-router-dom`
+- `styled-components`
+- `react-lazy-load`
+- `json-server`
+
+## Dependências de Desenvolvimento
+
+As dependências de desenvolvimento incluem:
+
+- `typescript` para adicionar tipos estáticos ao JavaScript.
+- `eslint` e vários plugins para linting.
+- `vite` para um ambiente de desenvolvimento mais rápido e produção mais eficiente.
