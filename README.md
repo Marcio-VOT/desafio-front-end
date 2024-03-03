@@ -4,7 +4,7 @@ Este projeto, intitulado "desafio-front-end", é uma implementação do desafio 
 
 O desafio é desenvolver uma aplicação que exibe uma tabela de dados, fornecidos por uma API simulada com json-server. A aplicação deve ser responsiva e permitir a pesquisa na tabela através de um input.
 
-# A tabela deve exibir:
+### A tabela deve exibir:
 
 Imagem (thumbnail do usuário)
 Nome
