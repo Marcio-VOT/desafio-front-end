@@ -6,12 +6,12 @@ O desafio é desenvolver uma aplicação que exibe uma tabela de dados, fornecid
 
 ### A tabela deve exibir:
 
-Imagem (thumbnail do usuário)
-Nome
-Cargo
-Data de admissão
-Telefone
-O input de pesquisa deve permitir filtrar dados por cargo, nome e telefone. As datas e telefones devem ser formatados no front-end, não na API.
+- Imagem (thumbnail do usuário)
+- Nome
+- Cargo
+- Data de admissão
+- Telefone
+- O input de pesquisa deve permitir filtrar dados por cargo, nome e telefone. As datas e telefones devem ser formatados no front-end, não na API.
 
 ## Pré-requisitos
 
